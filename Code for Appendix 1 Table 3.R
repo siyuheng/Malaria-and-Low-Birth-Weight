@@ -1,0 +1,56 @@
+nrow(individual_matched_without_missing_size)
+
+sum(individual_matched_without_missing_size$low_prevalence==0)/nrow(individual_matched_without_missing_size)
+sum(individual_matched_without_missing_size$low_prevalence==1)/nrow(individual_matched_without_missing_size)
+
+options(digits = 5)
+sum(individual_matched_without_missing_size$time_indicator==0)/nrow(individual_matched_without_missing_size)
+sum(individual_matched_without_missing_size$time_indicator==1)/nrow(individual_matched_without_missing_size)
+
+options(digits = 3)
+sum(individual_matched_without_missing_size$group_indicator==0)/nrow(individual_matched_without_missing_size)
+sum(individual_matched_without_missing_size$group_indicator==1)/nrow(individual_matched_without_missing_size)
+
+sum(individual_matched_without_missing_size$AGE<=19)/nrow(individual_matched_without_missing_size)
+sum(individual_matched_without_missing_size$AGE>=20 & individual_matched_without_missing_size$AGE<=29)/nrow(individual_matched_without_missing_size)
+sum(individual_matched_without_missing_size$AGE>=30 & individual_matched_without_missing_size$AGE<=39)/nrow(individual_matched_without_missing_size)
+sum(individual_matched_without_missing_size$AGE>=40)/nrow(individual_matched_without_missing_size)
+
+sum(individual_matched_without_missing_size$WEALTHQ==1)/nrow(individual_matched_without_missing_size)
+sum(individual_matched_without_missing_size$WEALTHQ==2)/nrow(individual_matched_without_missing_size)
+sum(individual_matched_without_missing_size$WEALTHQ==3)/nrow(individual_matched_without_missing_size)
+sum(individual_matched_without_missing_size$WEALTHQ==4)/nrow(individual_matched_without_missing_size)
+sum(individual_matched_without_missing_size$WEALTHQ==5)/nrow(individual_matched_without_missing_size)
+
+sum(individual_matched_without_missing_size$KIDBORD==1)/nrow(individual_matched_without_missing_size)
+sum(individual_matched_without_missing_size$KIDBORD==2)/nrow(individual_matched_without_missing_size)
+sum(individual_matched_without_missing_size$KIDBORD==3)/nrow(individual_matched_without_missing_size)
+
+sum(individual_matched_without_missing_size$URBAN==0)/nrow(individual_matched_without_missing_size)
+sum(individual_matched_without_missing_size$URBAN==1)/nrow(individual_matched_without_missing_size)
+
+sum(individual_matched_without_missing_size$EDUCLVL==0)/nrow(individual_matched_without_missing_size)
+sum(individual_matched_without_missing_size$EDUCLVL==1)/nrow(individual_matched_without_missing_size)
+sum(individual_matched_without_missing_size$EDUCLVL==2)/nrow(individual_matched_without_missing_size)
+
+sum(individual_matched_without_missing_size$KIDSEX==0)/nrow(individual_matched_without_missing_size)
+sum(individual_matched_without_missing_size$KIDSEX==1)/nrow(individual_matched_without_missing_size)
+
+sum(individual_matched_without_missing_size$MARSTAT==0)/nrow(individual_matched_without_missing_size)
+sum(individual_matched_without_missing_size$MARSTAT==1)/nrow(individual_matched_without_missing_size)
+
+options(digits = 5)
+sum(individual_matched_without_missing_size$ANCARE==0)/nrow(individual_matched_without_missing_size)
+sum(individual_matched_without_missing_size$ANCARE==1)/nrow(individual_matched_without_missing_size)
+
+options(digits = 3)
+sum(individual_matched_without_missing_size$low_size==1)/nrow(individual_matched_without_missing_size)
+sum(individual_matched_without_missing_size$low_size==0 & individual_matched_without_missing_size$large_size==0)/nrow(individual_matched_without_missing_size)
+sum(individual_matched_without_missing_size$large_size==1)/nrow(individual_matched_without_missing_size)
+
+options(digits = 5)
+table(individual_matched_without_missing_size$low_birthweight)
+sum(individual_matched_without_missing_size$low_birthweight==1)/nrow(individual_matched_without_missing_size)
+sum(individual_matched_without_missing_size$low_birthweight==0)/nrow(individual_matched_without_missing_size)
+sum(individual_matched_without_missing_size$low_birthweight==99)/nrow(individual_matched_without_missing_size)
+
